@@ -255,7 +255,6 @@ int main()
 		    system("cls");
 		}
 
-
 		//-----DELETE CONTACT------
 		else if (selec == 6)
 		{
@@ -325,9 +324,6 @@ int main()
 		    system("cls");
 		}
 
-
-
-		
 		//--------DELETE ALL------
 		else if(selec == 7)
 		{
