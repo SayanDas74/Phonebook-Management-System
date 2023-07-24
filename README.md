@@ -11,11 +11,11 @@ This mini project is on a simple Phonebook Management System implemented in C++.
 
 **QuickSort**: The quickSort function implements the QuickSort algorithm. It is used to sort the arrays of names and numbers in the phonebook. QuickSort is a divide-and-conquer sorting algorithm that recursively divides the array into smaller subarrays and sorts them based on a pivot element.
 ## Functions Used
-- [menu():](#menu) -----> Displays the main menu and returns the user's choice.\
-- [binarySearch():](#binarySearch) -----> Performs binary search on a sorted array of strings to find a specific contact in the phonebook.\
-- [quickSort():](#quickSort) -----> Sorts the arrays of names and numbers using the QuickSort algorithm.\
-- [partition():](#partition) -----> Partitions the array for the QuickSort algorithm.\
-- [contactExists():](#contactExists)-----> Checks if a contact with the same name or number already exists in the phonebook
+[menu():](#menu) -----> Displays the main menu and returns the user's choice.\
+[binarySearch():](#binarySearch) -----> Performs binary search on a sorted array of strings to find a specific contact in the phonebook.\
+[quickSort():](#quickSort) -----> Sorts the arrays of names and numbers using the QuickSort algorithm.\
+[partition():](#partition) -----> Partitions the array for the QuickSort algorithm.\
+[contactExists():](#contactExists)-----> Checks if a contact with the same name or number already exists in the phonebook
 ## Source Code for Functions
 ### menu():
 ```cpp
