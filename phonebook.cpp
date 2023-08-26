@@ -73,7 +73,8 @@ int main()
         {
         	string new_name, new_number;
             cout << "\n\n\n\n\n\n\n\n\t\t\t\t Enter Name: ";
-            cin >> new_name;											//k is the index of no. of entries
+            cin.ignore(); // Clear the newline left in the buffer
+            getline(cin, new_name); // Read the whole line including spaces											
             cout << "\n\t\t\t\t Enter Phone No: ";
             cin >> new_number;
             bool nameExists = contactExists(name, k, new_name);
@@ -119,7 +120,8 @@ int main()
         {
         	string temp;
         	cout<<"\n\n\n\n\n\n\n\n\t\t\t\t Enter Name to be searched: ";
-        	cin>>temp;
+        	cin.ignore(); // Clear the newline left in the buffer
+        	getline(cin, temp); // Read the whole line including spaces
         	quickSort(name, no, 0, k-1);  										//sort the numbers using Quick Sort
         	int index = (binarySearch(name, 0, k-1, temp));						//Binary Search to search the number
         	if(index!=-1)															
@@ -132,7 +134,7 @@ int main()
         		cout<<"\n\t\t\t\t NAME NOT FOUND !!";
         		cout << "\n\n\n\t\t\t\t Press Enter for the menu...";
 			}
-			cin.ignore(); 		
+			//cin.ignore(); 		
             cin.get();
             system("cls");
 		}
@@ -171,7 +173,8 @@ int main()
 		    if (choice == 1)
 		    {
 		        cout << "\n\n\n\n\n\n\n\t\t\t\t Enter name to be updated: ";
-		        cin >> temp;
+		        cin.ignore(); // Clear the newline left in the buffer
+            	getline(cin, temp); // Read the whole line including spaces
 		        quickSort(name, no, 0, k - 1); // sort both name and no arrays using Quick Sort
 		        int index = binarySearch(name, 0, k - 1, temp);
 		        if (index != -1)
@@ -267,7 +270,8 @@ int main()
 		    {
 		        string temp;
 		        cout << "\n\n\n\n\n\n\n\n\t\t\t\t Enter Name to be deleted: ";
-		        cin >> temp;
+		        cin.ignore(); // Clear the newline left in the buffer
+        		getline(cin, temp); // Read the whole line including spaces
 		        quickSort(name, no, 0, k - 1);
 		        int index = binarySearch(name, 0, k - 1, temp);
 		        if (index != -1)
@@ -319,7 +323,7 @@ int main()
 		    }
 		
 			cout << "\n\n\n\t\t\t\t Press Enter for the menu...";
-		    cin.ignore();
+		    //cin.ignore();
 		    cin.get();
 		    system("cls");
 		}
